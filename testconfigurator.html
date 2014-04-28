@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test Configurator </title>
+        <meta charset="UTF-8">
+        <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <style>
+            #can{
+                float: left;
+                width: 600px;
+            }
+            #dis{
+                float:right;
+                width: 400px;
+            }
+            #button{
+                float:left;
+            }
+         
+        </style>
+    </head>
+    <body>  
+        <!--?php
+        require_once ('uImage.php');
+        $pic = new uImage_gd2();
+        if ($pic->openFile('startb.png')){
+            $fit = $pic->crop(10,0,110,66);
+            $chmod = $pic->saveFile('startn.png','png');
+        }
+        $pic2 = new uImage_gd2();
+        if ($pic2->openFile('endb.png')){
+            $fit2 = $pic2->crop(0,0,55,26);
+            $ch2 = $pic2->saveFile('endn.png','png');
+        }
+        $pic3 = new uImage_gd2();
+        if ($pic3->openFile('link.png')){
+            $fit3 = $pic3->fitImage(11,23);
+            $ch3 = $pic3->saveFile('nodesb.png','png');
+        }
+        
+         ?-->
+        
+        <div id="container">
+            <div style="position: relative;" class="column" id="can">
+            <canvas id="layer1" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 0;background-color: transparent;"></canvas>
+            <canvas id="layer2" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 1;background-color: transparent;"></canvas>
+            <canvas id="layer3" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 2;background-color: transparent;"></canvas>
+            <canvas id="layer4" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 3;background-color: transparent;"></canvas>
+            </div>
+            <div class="column" id="dis">
+                <p id="demo"></p>
+                <br>
+                <p id="demo2"></p>
+                <br>
+                <p id="demo3"></p>
+                <br>
+                <p id='demo4'></p>
+                <br>
+                 <textarea id='demox' autofocus cols='45' rows='10'></textarea>
+                <p id='alert'>
+                <br>
+                 <button id='button'>Apply Your Control Points</button>
+                 <br>
+                 <p id='points'></p>
+                 <br>
+                 <button id="button2">Clear Canvas</button>
+            </div>
+        </div>
+        <script src="HigherDegreeBezierCurve.js"></script>
+    </body>
+</html>

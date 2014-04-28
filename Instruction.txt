@@ -1,0 +1,21 @@
+ Bezier Curve Generator
+ 
+ Author:
+ Chengyi Calvin Zhou
+ 
+ Email:
+ c44zhou@uwaterloo.ca
+ 
+ Introduction:
+ This Bezier Curve Generator uses the proper algorithm to generate n-th order 
+ bezier curve,n could be up to 20. To use it, just click and drag inside the 
+ canvas, the green control points will be generated and the curve will be 
+ changed accodringly. The right column shows the basic data for the current 
+ curve. You can also copy the points in the textarea and paste them when you 
+ reload or leave the page, just simply click Apply Your Control Points button
+ and all the points will be restored.
+ When you choose or drag a control point, it will turn into purple, the start 
+ point is brown and the end point is orange. 
+ Use numerical approximation method (Gauss Quarature)to calculate the arclength of 
+ n-th bezier curve, which is extremely efficient.
+ 
