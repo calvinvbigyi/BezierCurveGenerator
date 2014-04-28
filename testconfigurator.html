@@ -26,27 +26,7 @@ and open the template in the editor.
         </style>
     </head>
     <body>  
-        <!--?php
-        require_once ('uImage.php');
-        $pic = new uImage_gd2();
-        if ($pic->openFile('startb.png')){
-            $fit = $pic->crop(10,0,110,66);
-            $chmod = $pic->saveFile('startn.png','png');
-        }
-        $pic2 = new uImage_gd2();
-        if ($pic2->openFile('endb.png')){
-            $fit2 = $pic2->crop(0,0,55,26);
-            $ch2 = $pic2->saveFile('endn.png','png');
-        }
-        $pic3 = new uImage_gd2();
-        if ($pic3->openFile('link.png')){
-            $fit3 = $pic3->fitImage(11,23);
-            $ch3 = $pic3->saveFile('nodesb.png','png');
-        }
-        
-         ?-->
-        
-        <div id="container">
+         <div id="container">
             <div style="position: relative;" class="column" id="can">
             <canvas id="layer1" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 0;background-color: transparent;"></canvas>
             <canvas id="layer2" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 1;background-color: transparent;"></canvas>
