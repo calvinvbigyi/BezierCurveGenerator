@@ -44,6 +44,7 @@ $('#button2').click(function() {
     ctx2.clearRect(0, 0, WIDTH, HEIGHT);
     ctx3.clearRect(0, 0, WIDTH, HEIGHT);
     ctx4.clearRect(0, 0, WIDTH, HEIGHT);
+	points = [];
     document.getElementById('demox').value = "";
 });
 
