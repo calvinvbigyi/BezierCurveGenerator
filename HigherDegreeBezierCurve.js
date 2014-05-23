@@ -223,7 +223,7 @@ function getMarkers(canvas, evt) {
     var x = point[0];
     var y = point[1];
     var r = point[2];
-    //var arclength = getArcLength(100);
+    var arclength = getArcLength(100);
     var coor1 = "Coordinates on the bezier curve : ( " + x.toFixed(2) + " , " + y.toFixed(2) + " )";
     var coor2 = "Angles: " + r.toFixed(2);
     var coor3 = "Estimated percentage: " + percent.toFixed(2) + " % ";
