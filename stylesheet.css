@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Calvin
 */
 #can{
-    float: left;
+    margin-left: 100px; 
     width: 600px;
 }
 #dis{
