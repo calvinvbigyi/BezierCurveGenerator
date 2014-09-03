@@ -5,45 +5,20 @@
         <meta charset="UTF-8">
         <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        <style>
-            #can{
-                float: left;
-                width: 600px;
-            }
-            #dis{
-                float:right;
-                width: 400px;
-            }
-            #button{
-                float:left;
-            }
-            #demo{
-                font-family:Arial,Helvetica,sans-serif;font:bold;
-            }
-            #demo2{
-                font-family:Arial,Helvetica,sans-serif;font:bold;
-            }
-            #demo3{
-                font-family:Arial,Helvetica,sans-serif;font:bold;
-            }
-            #demo4{
-                font-family:Arial,Helvetica,sans-serif;font:bold;
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     </head>
     <body>  
-        <h2 style="font:italic bold fantasy;font-size: 400%;margin-left:350px;font-family:Tahoma;">Bezier Curve Generator</h2>
-        <h2 style="font: italic bold fantasy;font-size:150%;margin-left:600px;font-family:Tahoma;color:greenyellow;">----A brand new and efficient solution to create bezier curves</h2>
+        <h2 id="1">Bezier Curve Generator</h2>
+        <h2 id="2">----A brand new and efficient solution to create bezier curves</h2>
          <div id="container">
-            <div style="position: relative;" class="column" id="can">
-            <canvas id="layer1" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 0;background-color: transparent;"></canvas>
-            <canvas id="layer2" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 1;background-color: transparent;"></canvas>
-            <canvas id="layer3" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 2;background-color: transparent;"></canvas>
-            <canvas id="layer4" width=650 height=700 style="border: 1px solid #d3d3d3; position: absolute; left:0px; top:0px; z-index: 3;background-color: transparent;"></canvas>
+            <div class="column" id="can">
+            <canvas id="layer1" width=650 height=700></canvas>
+            <canvas id="layer2" width=650 height=700></canvas>
+            <canvas id="layer3" width=650 height=700></canvas>
+            <canvas id="layer4" width=650 height=700></canvas>
             </div>
             <div class="column" id="dis">
-                <h2 style="font-family:Arial,Helvetica,sans-serif;">Important Data</h2>
+                <h2 id="3">Important Data</h2>
                 <p id="demo"></p>
                 <br>
                 <p id="demo2"></p>
